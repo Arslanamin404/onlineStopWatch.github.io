@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato',sans-serif;
+}
+body{
+    background-image: url(project-bg.jpg);
+    background-size: cover;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* color: red;
+    border: 1px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h1{
+    flex-wrap: wrap;
+    text-align:center;
+    padding: 10px;
+    font-size: 50px;
+    color: red;
+    font-family: monospace;
+    font-variant: small-caps;
+    background-color: rgba(1,1,1,0.9);
+}
+.container{
+    width: 65%;
+    height: auto;
+    background-color:rgba(255,255,255,0.2);
+    border-radius: 30px;
+    box-shadow: 0 0 3px;
+    padding-bottom:30px ;
+}
+#timer{
+    width: 100%;
+    font-size: 72px;
+    margin: 0px auto;
+    padding: 35px;
+    text-align: center;    
+}
+.buttons{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+button{
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+button i{
+    font-size: 2rem;
+    padding: 10px;
+    color: white;
+    width: 50px;
+}
+
+#play{
+    background-color: green;
+}
+#pause{
+    background-color: orange;
+}
+#reset{
+    background-color: red;
+}
+.card-footer{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.link{
+    color: teal;
+}
+@media screen and (max-width: 720px) {
+    body{
+        align-items:flex-start;
+        height: 100%;
+        background-size:cover;
+    }
+    .container{
+        margin: 90px auto;
+        height: auto;
+        border-radius: 30px;
+        width: 90%;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    #timer{
+        font-size: 3.6rem;
+        margin:20px auto ;
+        width: auto;
+        text-shadow: 0 0 8px lavender;
+        overflow: auto;
+    }
+    .buttons{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    button{
+        margin: 0 30px;
+    }
+     button i{
+        font-size: 2.5rem;
+        padding: 10px;
+        color: white;
+        width: 60px;
+    } 
+    .card-footer{
+        font-size:18px;
+    }   
+}
